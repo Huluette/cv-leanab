@@ -229,6 +229,8 @@ section.partie_droite_cv div div.deco div {
     background-color: bisque;
 }
 
+/** FOOTER DU CV **/
+
 /** RESPONSIVE MOBILE EN 360PX DE LARGEUR **/
 
 @media screen and (max-weight: 360px) {
