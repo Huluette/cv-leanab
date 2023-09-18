@@ -1,0 +1,243 @@
+/** RESET NAVIGATEUR **/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/** RECCURENTS DU CORPS DU SITE **/
+
+body {
+    width: 95vw;
+    height: auto;
+    background: linear-gradient(rgb(0, 0, 109), rgb(147, 0, 147));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+/** SECTION DE LA TETE DU SITE AVEC LE NOM & PRENOM, 
+AINSI QUE LA PHOTO **/
+
+section.header {
+    width: 60vw;
+    margin: 1%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.header h1 {
+    font-size: 2vw;
+}
+
+div.teteducv {
+    width: 15vw;
+    height: auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/** Photo de profile **/
+
+div.teteducv div.img_photo_cv {
+    width: 15vw;
+    height: 15vw;
+    background-color: azure;
+    margin: 1%;
+    border-radius: 0px 150px 150px 150px;
+}
+
+
+/** MOTIF ET MESSAGE DU MOTIF SITUE EN DESSOUS DU GRAND TITRE **/
+
+div.motif {
+    width: 98.2vw;
+    height: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.motif h3 {
+    width: 5vw;
+    height: 3vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    position: absolute;
+    top: -10px;
+    left: 21.5vw;
+    text-shadow: 1px 1px 2px grey;
+}
+
+div.motif p {
+    width: 55vw;
+    height: 12vh;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    text-align: left;
+}
+
+/** PARTIE GLOBALE **/
+
+div.globale {
+    width: 98vw;
+    height: auto;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** PARTIE GAUCHE DU CV **/
+
+section.partie_gauche_cv {
+    width: 48.1vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+section.partie_gauche_cv h4 {
+    text-align: center;
+    line-height: 5vh;
+    font-size: large;
+}
+
+section.partie_gauche_cv div {
+    width: 22vw;
+    height: 60vh;
+    margin: 1vw;
+}
+
+section.partie_gauche_cv div ul {
+    list-style: none;
+    line-height: 3vh;
+}
+
+section.partie_gauche_cv div ul li {
+    margin: .5vw 0vw;
+}
+
+section.partie_gauche_cv div ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section.partie_gauche_cv div ul li a:hover {
+    color: pink;
+    transition: .5s all ease;
+}
+
+section.partie_gauche_cv div.coordonnees {
+    height: 22vh;
+}
+
+/** PARTIE DROITE DU CV **/
+
+section.partie_droite_cv {
+    width: 48.1vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.partie_droite_cv div.left {
+    width: 30vw;
+    height: 30vh;
+    margin-right: 11vw;
+}
+
+/** DIV LANGUE QUI EST MISE A L'INVERSE DES AUTRES DIV, DANS 
+LE BUT QUE LES TEXTES POINTENT LA DIRECTION DE DROITE **/
+
+section.partie_droite_cv div.right {
+    width: 30vw;
+    height: 30vh;
+    margin-left: 11vw;
+    text-align: right;
+}
+
+section.partie_droite_cv div h4 {
+    line-height: 5vh;
+    font-size: large;
+}
+
+section.partie_droite_cv div p {
+    line-height: 3.5vh;
+    padding: .5vw;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/** VOICI LE CSS DE LA DIV DECO **/
+
+section.partie_droite_cv div div.deco {
+    padding: .5vw;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/** LES IMAGES POUR ILLUSTRER LES COMPETENCES **/
+
+section.partie_droite_cv div div.deco div {
+    width: 3vw;
+    height: 3vw;
+    background-color: bisque;
+}
+
+/** RESPONSIVE MOBILE EN 360PX DE LARGEUR **/
+
+@media screen and (max-weight: 360px) {
+    body {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    /** SECTION EN-TETE DU SITE AVEC LA PHOTO DE PROFIL 
+    ET LE NOM & PRENOM **/
+
+    div.teteducv {
+        width: 100vw;
+        height: auto;
+        padding: 1%;
+    }
+
+    div.teteducv div.img_photo_cv {
+        width: 100vw;
+        height: 100vw;
+    }
+
+
+}
