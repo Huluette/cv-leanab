@@ -42,6 +42,11 @@ section.header {
 
 section.header h1 {
     font-size: 2vw;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px grey;
+    padding: 1%;
 }
 
 div.teteducv {
@@ -173,6 +178,14 @@ section.partie_droite_cv {
     align-items: center;
 }
 
+div.langues {
+    margin-top: 2vw;
+} 
+
+div.competences {
+    margin-top: 3.5vw;
+}
+
 section.partie_droite_cv div.left {
     width: 30vw;
     height: 30vh;
@@ -185,7 +198,7 @@ LE BUT QUE LES TEXTES POINTENT LA DIRECTION DE DROITE **/
 section.partie_droite_cv div.right {
     width: 30vw;
     height: 30vh;
-    margin-left: 11vw;
+    margin-left: 17.5vw;
     text-align: right;
 }
 
