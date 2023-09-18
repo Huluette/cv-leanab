@@ -127,6 +127,9 @@ section.partie_gauche_cv h4 {
     text-align: center;
     line-height: 5vh;
     font-size: large;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px grey;
 }
 
 section.partie_gauche_cv div {
@@ -187,8 +190,17 @@ section.partie_droite_cv div.right {
 }
 
 section.partie_droite_cv div h4 {
+    width: 12vw;
+    text-align: center;
     line-height: 5vh;
     font-size: large;
+    text-shadow: 1px 1px 2px grey;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+}
+
+section.partie_droite_cv div h4.p-right {
+    margin-left: 18vw;
 }
 
 section.partie_droite_cv div p {
