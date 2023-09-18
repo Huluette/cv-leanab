@@ -65,7 +65,11 @@ div.teteducv {
 div.teteducv div.img_photo_cv {
     width: 15vw;
     height: 15vw;
-    background-color: azure;
+    background-image: url(img/profil.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: pink;
     margin: 1%;
     border-radius: 0px 150px 150px 150px;
 }
@@ -236,10 +240,55 @@ section.partie_droite_cv div div.deco {
 
 /** LES IMAGES POUR ILLUSTRER LES COMPETENCES **/
 
-section.partie_droite_cv div div.deco div {
+/* section.partie_droite_cv div div.deco div {
     width: 3vw;
     height: 3vw;
     background-color: bisque;
+} */
+
+section.partie_droite_cv div div.deco div.figma {
+    width: 3vw;
+    height: 3vw;
+    background-image: url(img/figma.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.partie_droite_cv div div.deco div.html {
+    width: 3vw;
+    height: 3vw;
+    background-image: url(img/code.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.partie_droite_cv div div.deco div.photoshop {
+    width: 3vw;
+    height: 3vw;
+    background-image: url(img/adobe-photoshop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.partie_droite_cv div div.deco div.illustrator {
+    width: 3vw;
+    height: 3vw;
+    background-image: url(img/adobe-illustrator.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.partie_droite_cv div div.deco div.team {
+    width: 3vw;
+    height: 3vw;
+    background-image: url(img/team-building.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /** FOOTER DU CV **/
