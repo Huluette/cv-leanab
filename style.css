@@ -342,6 +342,8 @@ section.partie_droite_cv div div.deco div.team {
     transition: .3s all ease-in-out;
 }
 
+/** AJOUT D'EFFETS POUR LA PARTIE COMPETENCES **/
+
 section.partie_droite_cv div div.deco div:hover {
     transform: scale(1.1);
 }
