@@ -299,6 +299,7 @@ section.partie_droite_cv div div.deco div.figma {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: .3s all ease-in-out;
 }
 
 section.partie_droite_cv div div.deco div.html {
@@ -308,6 +309,7 @@ section.partie_droite_cv div div.deco div.html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: .3s all ease-in-out;
 }
 
 section.partie_droite_cv div div.deco div.photoshop {
@@ -317,6 +319,7 @@ section.partie_droite_cv div div.deco div.photoshop {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: .3s all ease-in-out;
 }
 
 section.partie_droite_cv div div.deco div.illustrator {
@@ -326,6 +329,7 @@ section.partie_droite_cv div div.deco div.illustrator {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: .3s all ease-in-out;
 }
 
 section.partie_droite_cv div div.deco div.team {
@@ -335,6 +339,11 @@ section.partie_droite_cv div div.deco div.team {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: .3s all ease-in-out;
+}
+
+section.partie_droite_cv div div.deco div:hover {
+    transform: scale(1.1);
 }
 
 /** FOOTER DU CV **/
@@ -367,6 +376,11 @@ footer div.logo {
     background-size: contain;
     background-repeat: no-repeat;
     filter: drop-shadow(0 3px 5px pink);
+    transition: .3s all ease-in-out;
+}
+
+footer div.logo:hover {
+    transform: scale(1.1);
 }
 
 
