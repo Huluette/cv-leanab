@@ -3,27 +3,19 @@
 const btn = document.querySelector('#btn');
 const img = document.querySelector('#img');
 
+// MISE EN PLACE DU TEXTE PORNONCE PAR LE PERSO CHAT //
+
+const mess = document.querySelector('#mess');
+
 btn.addEventListener('click', () => {
     if (img.style.display == 'block') {
         img.style.display = 'none';
     }
     else {
         img.style.display = 'block';
+        
+        // MISE EN PLACE DU TEXTE PORNONCE PAR LE PERSO CHAT //
+
+        mess.innerHTML = "Bienvenue sur le CV de ma maîtresse !";
     }
 });
-
-
-
-
-
-
-// INFOBULLE POUR FAIRE PARLER LE CHAT UN //
-
-// $("[title]").tooltip(
-//     {
-//         poisition:
-//         {
-//             at:(left-300)
-//         }
-//     }
-// );
