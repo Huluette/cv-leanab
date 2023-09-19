@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Léana</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts/main.js"></script>
+    <script defer src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -33,8 +33,15 @@
 
     <!-- MISE EN PLACE DU PERSONNAGE EN HAUT A DROITE DE L'ECRAN 
     PERMETTANT D'Y INSERER UNE INFOBULLE -->
-    <button>
+
+    <button class="btn" id="btn">
+
+        <!-- IMAGE DU PERSONNAGE PAR DEFAUT -->
         <div class="perso_chat"></div>
+
+        <!-- SECONDE IMAGE LORS DE L'INTERACTION JAVASCRIPT -->
+        <div class="perso_chat_hide" id="img" title="Bienvenue sur le CV de ma maîtresse !"></div>
+
     </button>
 
     <!-- LE MOTIF POUR DEVENIR CONCEPTEUR DESIGNER UI ET 

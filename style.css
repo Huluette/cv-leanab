@@ -78,18 +78,31 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 button div.perso_chat {
-    width: 25vw;
+    width: 20vw;
     height: 25vw;
     background-image: url(img/perso_chat_a.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+button div.perso_chat_hide {
+    width: 20vw;
+    height: 25vw;
+    background-image: url(img/perso_chat_b.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 
