@@ -110,7 +110,7 @@ button div.perso_chat_hide {
 #mess {
     width: 20vw;
     height: 7vh;
-    border: 1px solid white;
+    border: 2px solid white;
     box-shadow: 0px 3px 5px rgba(192, 192, 192, 0.51);
     border-radius: 100px 100px 2px 100px;
     text-shadow: 1px 1px 2px grey;
@@ -175,7 +175,6 @@ section.partie_gauche_cv {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 section.partie_gauche_cv h4 {
@@ -226,6 +225,7 @@ section.partie_droite_cv {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-left: 2px solid white;
 }
 
 div.langues {
@@ -238,7 +238,7 @@ div.competences {
 
 section.partie_droite_cv div.left {
     width: 30vw;
-    height: 30vh;
+    height: 32vh;
     margin-right: 11vw;
 }
 
@@ -338,6 +338,37 @@ section.partie_droite_cv div div.deco div.team {
 }
 
 /** FOOTER DU CV **/
+
+footer {
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 55vw;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+}
+
+footer a:hover {
+    color: pink;
+}
+
+footer div.logo {
+    width: 7vw;
+    height: 7vh;
+    background-image: url(img/Grand-Logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 3px 5px pink);
+}
+
 
 /** RESPONSIVE MOBILE EN 360PX DE LARGEUR **/
 
