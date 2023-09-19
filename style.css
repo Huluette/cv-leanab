@@ -74,6 +74,24 @@ div.teteducv div.img_photo_cv {
     border-radius: 0px 150px 150px 150px;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+button div.perso_chat {
+    width: 25vw;
+    height: 25vw;
+    background-image: url(img/perso_chat_a.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
 
 /** MOTIF ET MESSAGE DU MOTIF SITUE EN DESSOUS DU GRAND TITRE **/
 
@@ -184,7 +202,7 @@ section.partie_droite_cv {
 
 div.langues {
     margin-top: 2vw;
-} 
+}
 
 div.competences {
     margin-top: 3.5vw;
