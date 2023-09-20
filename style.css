@@ -10,7 +10,7 @@
 /** RECCURENTS DU CORPS DU SITE **/
 
 body {
-    width: 95vw;
+    width: 98vw;
     height: auto;
     background: linear-gradient(rgb(0, 0, 109), rgb(147, 0, 147));
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -131,7 +131,7 @@ button div.perso_chat_hide {
 /** MOTIF ET MESSAGE DU MOTIF SITUE EN DESSOUS DU GRAND TITRE **/
 
 div.motif {
-    width: 98.2vw;
+    width: 98vw;
     height: auto;
     margin-top: 5vh;
     display: flex;
@@ -394,7 +394,7 @@ footer div.logo:hover {
 
 /** RESPONSIVE MOBILE EN 768PX DE LARGEUR **/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 491px) and (max-width: 800px) {
 
     /** ENTETE DU SITE CONTENANT LA PHOTO DE PROFIL, 
     LE TITRE H1 ET LE PERSONNAGE CHAT  **/
@@ -625,28 +625,86 @@ footer div.logo:hover {
 
 }
 
-
 /** RESPONSIVE MOBILE EN 390PX DE LARGEUR **/
 
-@media screen and (max-width: 390px) {
-    body {
-        width: 100vw;
-        height: 80vh;
+@media screen and (min-width: 390px) and (max-width: 490px) {
+
+   
+    /** SECTION HEADER COMPRENANT PHOTO DE PROFIL, NOM & PRENOM 
+    ET H1 **/
+   
+    section.header {
+        width: 85vw;
+        flex-direction: column;
     }
 
-    /** SECTION EN-TETE DU SITE AVEC LA PHOTO DE PROFIL 
-    ET LE NOM & PRENOM **/
-
     div.teteducv {
-        width: 100vw;
-        height: auto;
-        padding: 1%;
+        width: 85vw;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     div.teteducv div.img_photo_cv {
-        width: 100vw;
-        height: 100vw;
+        width: 30vw;
+        height: 30vw;
+        background-size: cover;
     }
+
+    section.header h1 {
+        position: absolute; 
+        top: 100px; 
+        right: 0px;
+        font-size: 6vw;
+    }
+
+    /** SECTION MOTIF **/
+
+    div.motif {
+        width: 98vw;
+        margin: 60vw 0 0 0;
+    }
+
+    div.motif h3 {
+        width: 30vw;
+        height: 4vh;
+        font-size: 6.5vw;
+        top: -25px;
+        left: 4.1vw;
+    }
+
+    div.motif p {
+        width: 90vw;
+        height: 30vh;
+        font-size: 5.3vw;
+    }
+
+    /** PERSONNAGE CHAT **/
+
+    button {
+        width: 50vw;
+    }
+
+    button div.perso_chat {
+        width: 50vw;
+        z-index: 9999;
+    }
+
+    button div.perso_chat_hide {
+        width: 50vw;
+        z-index: 9999;
+    }
+
+    #mess {
+        width: 50vw;
+        right: 150px;
+        top: 150px;
+        font-size: 4.5vw;
+        line-height: 6vw;
+    }
+
+    /** PARTIE DE LA DIV GLOBALE **/
+
+    
 
 
 }
