@@ -80,11 +80,14 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 button div.perso_chat {
     width: 20vw;
-    height: 25vw;
+    height: 25vh;
     background-image: url(img/perso_chat_a.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -96,7 +99,7 @@ button div.perso_chat {
 
 button div.perso_chat_hide {
     width: 20vw;
-    height: 25vw;
+    height: 25vh;
     background-image: url(img/perso_chat_b.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -395,7 +398,7 @@ footer div.logo:hover {
     LE TITRE H1 ET LE PERSONNAGE CHAT  **/
 
     section.header {
-        width: 75vw;
+        width: 78vw;
     }
 
     div.teteducv {
@@ -409,42 +412,57 @@ footer div.logo:hover {
 
     section.header h1 {
         font-size: 4vw;
+        padding: 2%;
+    }
+
+    button {
+        width: 40vw;
+        height: 50vh;
+        top: 70px;
     }
 
     button div.perso_chat {
-        top: 110px;
-        width: 25vw;
-        height: 35vw;
+        top: 0px;
+        width: 40vw;
+        height: 50vh;
     }
 
     button div.perso_chat_hide {
-        top: 110px;
-        width: 25vw;
-        height: 35vw;
+        top: 0px;
+        width: 40vw;
+        height: 50vh;
     }
 
     #mess {
-        width: 40vw;
-        height: 5vh;
+        width: 30vw;
+        height: 10vh;
         border-radius: 100px 130px 2px 100px;
-        right: 190px;
+        right: 240px;
+        top: 130px;
+        font-size: 2vw;
+        line-height: 4vh;
     }
 
     /** SECTION MOTIF **/
 
-    div.motif { 
+    div.motif {
         width: 90vw;
+        margin: 10vw 0vw 0vw 0vw;
     }
 
     div.motif h3 {
-        width: 8vw;
+        width: 15vw;
+        height: 4vh;
         left: 10vw;
+        font-size: 3vw;
+        top: -18px;
     }
 
     div.motif p {
         width: 70vw;
-        height: 15vh;
-        padding: 2%;
+        height: 20vh;
+        padding: 2.5%;
+        font-size: 2.5vw;
     }
 
     /** PARTIE GLOBALE **/
@@ -456,16 +474,149 @@ footer div.logo:hover {
 
     /** PARTIE GAUCHE DU CV **/
 
-    section.partie_gauche_cv{
+    section.partie_gauche_cv {
         width: 98vw;
         height: 125vh;
         justify-content: space-between;
         align-items: center;
+        margin: 10vw 0vw 0vw 0vw;
+    }
+
+    section.partie_gauche_cv h4 {
+        font-size: 3vw;
     }
 
     section.partie_gauche_cv div {
         width: 70vw;
         height: auto;
+    }
+
+    section.partie_gauche_cv ul {
+        margin: 2vw 0vw;
+        line-height: 4vh;
+    }
+
+    section.partie_gauche_cv div ul li {
+        font-size: 2.3vw;
+    }
+
+    /** PARTIE DROITE DU CV **/
+
+    section.partie_droite_cv {
+        flex-direction: column;
+        width: 100vw;
+        border-top: 1.5px solid white;
+        border-left: none;
+        margin: 10vw 0vw 0vw 0vw;
+    }
+
+    div.langues {
+        margin-top: 3vw;
+    }
+
+    div.competences {
+        margin-top: 5.5vw;
+    }
+
+    section.partie_droite_cv div.centresinteret {
+        margin-top: 10vw;
+    }
+
+    section.partie_droite_cv div.left {
+        width: 70vw;
+        margin-right: 0vw;
+    }
+
+    section.partie_droite_cv div.right {
+        width: 70vw;
+        margin-left: 0vw;
+    }
+
+    section.partie_droite_cv div h4 {
+        width: 25vw;
+    }
+
+    section.partie_droite_cv div h4.p-right {
+        margin-left: 45vw;
+    }
+
+    /** VOICI LE CSS DE LA DIV DECO DANS SECTION COMPETENCES **/
+
+    section.partie_droite_cv div div.deco {
+        height: 10vh;
+        justify-content: space-evenly;
+    }
+
+    section.partie_droite_cv div div.deco div.figma {
+        width: 8vw;
+        height: 9vh;
+    }
+
+    section.partie_droite_cv div div.deco div.html {
+        width: 8vw;
+        height: 9vh;
+    }
+
+    section.partie_droite_cv div div.deco div.photoshop {
+        width: 8vw;
+        height: 9vh;
+    }
+
+    section.partie_droite_cv div div.deco div.illustrator {
+        width: 8vw;
+        height: 9vh;
+    }
+
+    section.partie_droite_cv div div.deco div.team {
+        width: 8vw;
+        height: 9vh;
+    }
+
+    /** FOOTER **/
+
+    footer {
+        width: 98vw;
+        margin-left: 0;
+    }
+
+    footer a {
+        font-size: 2.5vw;
+        animation-name: brightness;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
+
+    footer a:hover {
+        display: none;
+    }
+
+    @keyframes brightness {
+
+        0% {
+            filter: brightness(0.4);
+            filter: contrast(0.4);
+            -webkit-filter: brightness(0.4);
+            -webkit-filter: contrast(0.4);
+            filter: drop-shadow(0 0 1px pink);
+        }
+
+        50% {
+            filter: brightness(1);
+            filter: contrast(1);
+            -webkit-filter: brightness(1);
+            -webkit-filter: contrast(1);
+            filter: drop-shadow(0 0 10px pink);
+            color: rgb(250, 220, 225);
+        }
+
+        100% {
+            filter: brightness(0.4);
+            filter: contrast(0.4);
+            -webkit-filter: brightness(0.4);
+            -webkit-filter: contrast(0.4);
+            filter: drop-shadow(0 0 1px pink);
+        }
+
     }
 
 }
