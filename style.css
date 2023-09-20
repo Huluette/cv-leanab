@@ -60,7 +60,7 @@ div.teteducv {
 
 }
 
-/** Photo de profile **/
+/** PHOTO DE PROFIL **/
 
 div.teteducv div.img_photo_cv {
     width: 15vw;
@@ -73,6 +73,8 @@ div.teteducv div.img_photo_cv {
     margin: 1%;
     border-radius: 0px 150px 150px 150px;
 }
+
+/** BOUTON PERSONNAGE CHAT **/
 
 button {
     background-color: transparent;
@@ -385,10 +387,93 @@ footer div.logo:hover {
     transform: scale(1.1);
 }
 
+/** RESPONSIVE MOBILE EN 768PX DE LARGEUR **/
 
-/** RESPONSIVE MOBILE EN 360PX DE LARGEUR **/
+@media screen and (max-width: 768px) {
 
-@media screen and (max-weight: 360px) {
+    /** ENTETE DU SITE CONTENANT LA PHOTO DE PROFIL, 
+    LE TITRE H1 ET LE PERSONNAGE CHAT  **/
+
+    section.header {
+        width: 75vw;
+    }
+
+    div.teteducv {
+        width: 25vw;
+    }
+
+    div.teteducv div.img_photo_cv {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    section.header h1 {
+        font-size: 4vw;
+    }
+
+    button div.perso_chat {
+        top: 110px;
+        width: 25vw;
+        height: 35vw;
+    }
+
+    button div.perso_chat_hide {
+        top: 110px;
+        width: 25vw;
+        height: 35vw;
+    }
+
+    #mess {
+        width: 40vw;
+        height: 5vh;
+        border-radius: 100px 130px 2px 100px;
+        right: 190px;
+    }
+
+    /** SECTION MOTIF **/
+
+    div.motif { 
+        width: 90vw;
+    }
+
+    div.motif h3 {
+        width: 8vw;
+        left: 10vw;
+    }
+
+    div.motif p {
+        width: 70vw;
+        height: 15vh;
+        padding: 2%;
+    }
+
+    /** PARTIE GLOBALE **/
+
+    div.globale {
+        flex-direction: column;
+    }
+
+
+    /** PARTIE GAUCHE DU CV **/
+
+    section.partie_gauche_cv{
+        width: 98vw;
+        height: 125vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section.partie_gauche_cv div {
+        width: 70vw;
+        height: auto;
+    }
+
+}
+
+
+/** RESPONSIVE MOBILE EN 390PX DE LARGEUR **/
+
+@media screen and (max-width: 390px) {
     body {
         width: 100vw;
         height: 80vh;
