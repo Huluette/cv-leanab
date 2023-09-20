@@ -126,6 +126,19 @@ button div.perso_chat_hide {
     top: 90px;
     right: 240px;
     padding: 1vw;
+    animation: blinker 1s linear;
+}
+
+@keyframes blinker {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    
 }
 
 /** MOTIF ET MESSAGE DU MOTIF SITUE EN DESSOUS DU GRAND TITRE **/
