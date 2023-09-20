@@ -208,6 +208,15 @@ section.partie_gauche_cv div ul li {
     margin: .5vw 0vw;
 }
 
+section.partie_gauche_cv div ul li.rs {
+    width: 22vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 section.partie_gauche_cv div ul li a {
     color: white;
     text-decoration: none;
@@ -218,8 +227,37 @@ section.partie_gauche_cv div ul li a:hover {
     transition: .5s all ease;
 }
 
+/** RESEAUX SOCIAUX **/
+
+section.partie_gauche_cv div ul li a div.linkedin {
+    width: 2.5vw;
+    height: 5vh;
+    background-image: url(img/linkedin.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s all ease-in-out;
+}
+
+section.partie_gauche_cv div ul li a div.git {
+    width: 2.5vw;
+    height: 5vh;
+    background-image: url(img/github.png);
+    background-color: white;
+    border-radius: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s all ease-in-out;
+}
+
+section.partie_gauche_cv div ul li a div:hover {
+    transform: scale(1.1);
+}
+
+
 section.partie_gauche_cv div.coordonnees {
-    height: 22vh;
+    height: 30vh;
 }
 
 /** PARTIE DROITE DU CV **/
@@ -479,7 +517,7 @@ footer div.logo:hover {
 
     section.partie_gauche_cv {
         width: 98vw;
-        height: 125vh;
+        height: 135vh;
         justify-content: space-between;
         align-items: center;
         margin: 10vw 0vw 0vw 0vw;
@@ -501,6 +539,30 @@ footer div.logo:hover {
 
     section.partie_gauche_cv div ul li {
         font-size: 2.3vw;
+    }
+
+    section.partie_gauche_cv div.coordonnees {
+        height: 35vh;
+    }
+
+    /** RESEAUX SOCIAUX **/
+
+    section.partie_gauche_cv div ul li.rs {
+        width: 80vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    section.partie_gauche_cv div ul li a div.linkedin {
+        width: 8vw;
+        height: 8vh;
+    }
+    
+    section.partie_gauche_cv div ul li a div.git {
+        width: 8vw;
+        height: 8vh;
+        border-radius: 150px;
     }
 
     /** PARTIE DROITE DU CV **/
@@ -629,10 +691,10 @@ footer div.logo:hover {
 
 @media screen and (min-width: 390px) and (max-width: 490px) {
 
-   
+
     /** SECTION HEADER COMPRENANT PHOTO DE PROFIL, NOM & PRENOM 
     ET H1 **/
-   
+
     section.header {
         width: 85vw;
         flex-direction: column;
@@ -651,8 +713,8 @@ footer div.logo:hover {
     }
 
     section.header h1 {
-        position: absolute; 
-        top: 100px; 
+        position: absolute;
+        top: 100px;
         right: 0px;
         font-size: 6vw;
     }
@@ -704,7 +766,197 @@ footer div.logo:hover {
 
     /** PARTIE DE LA DIV GLOBALE **/
 
+    div.globale {
+        flex-direction: column;
+    }
+
+    /** PARTIE GAUCHE DU CV **/
+
+    section.partie_gauche_cv {
+        width: 98vw;
+        height: 160vh;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10vw 0vw 0vw 0vw;
+    }
+
+    section.partie_gauche_cv h4 {
+        font-size: 6.5vw;
+    }
+
+    section.partie_gauche_cv div {
+        width: 90vw;
+        height: auto;
+    }
+
+    section.partie_gauche_cv ul {
+        margin: 2vw 0vw;
+        line-height: 6vh;
+    }
+
+    section.partie_gauche_cv div ul li {
+        font-size: 4.5vw;
+    }
+
+    /** RESEAUX SOCIAUX **/
+
+    section.partie_gauche_cv div ul li.rs {
+        width: 90vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
     
+    section.partie_gauche_cv div ul li a div.linkedin {
+        width: 20vw;
+        height: 20vh;
+    }
+    
+    section.partie_gauche_cv div ul li a div.git {
+        width: 20vw;
+        height: 10vh;
+        border-radius: 150px;
+    }
+
+    /** PARTIE DROITE DU CV **/
+
+    section.partie_droite_cv {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        height: 150vh;
+        border-top: 1.5px solid white;
+        border-left: none;
+        margin: 15vw 0vw 0vw 0vw;
+    }
+
+    div.langues {
+        margin-top: 0vw;
+    }
+
+    div.competences {
+        margin-top: 12vw;
+    }
+
+    section.partie_droite_cv div.centresinteret {
+        margin-top: 18vw;
+    }
+
+    section.partie_droite_cv div.left {
+        width: 90vw;
+        margin-right: 0vw;
+    }
+
+    section.partie_droite_cv div.right {
+        width: 90vw;
+        margin-left: 0vw;
+    }
+
+    section.partie_droite_cv div h4 {
+        width: 60vw;
+        font-size: 6vw;
+    }
+
+    section.partie_droite_cv div h4.p-right {
+        margin-left: 30vw;
+    }
+
+    section.partie_droite_cv div p {
+        font-size: 5vw;
+    }
+
+    /** CSS DE LA DIV DECO DANS SECTION COMPETENCES **/
+
+    section.partie_droite_cv div div.deco {
+        width: 90vw;
+        height: 15vh;
+        justify-content: space-evenly;
+    }
+
+    section.partie_droite_cv div div.deco div.figma {
+        width: 13vw;
+        height: 14vh;
+    }
+
+    section.partie_droite_cv div div.deco div.html {
+        width: 13vw;
+        height: 14vh;
+    }
+
+    section.partie_droite_cv div div.deco div.photoshop {
+        width: 13vw;
+        height: 14vh;
+    }
+
+    section.partie_droite_cv div div.deco div.illustrator {
+        width: 13vw;
+        height: 14vh;
+    }
+
+    section.partie_droite_cv div div.deco div.team {
+        width: 13vw;
+        height: 14vh;
+    }
+
+    /** FOOTER **/
+
+    footer {
+        width: 98vw;
+        height: 13vh;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vw;
+        position: relative;
+    }
+
+    footer a {
+        font-size: 5vw;
+        animation-name: brightness;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
+
+    footer a:hover {
+        display: none;
+    }
+
+    @keyframes brightness {
+
+        0% {
+            filter: brightness(0.4);
+            filter: contrast(0.4);
+            -webkit-filter: brightness(0.4);
+            -webkit-filter: contrast(0.4);
+            filter: drop-shadow(0 0 1px pink);
+        }
+
+        50% {
+            filter: brightness(1);
+            filter: contrast(1);
+            -webkit-filter: brightness(1);
+            -webkit-filter: contrast(1);
+            filter: drop-shadow(0 0 10px pink);
+            color: rgb(250, 220, 225);
+        }
+
+        100% {
+            filter: brightness(0.4);
+            filter: contrast(0.4);
+            -webkit-filter: brightness(0.4);
+            -webkit-filter: contrast(0.4);
+            filter: drop-shadow(0 0 1px pink);
+        }
+
+    }
+
+    footer div.logo {
+        width: 20vw;
+        height: 13vh;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
 
 
 }
