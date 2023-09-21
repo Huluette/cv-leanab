@@ -65,7 +65,7 @@ div.teteducv {
 div.teteducv div.img_photo_cv {
     width: 15vw;
     height: 15vw;
-    background-image: url(img/profil.png);
+    background-image: url(img/profil.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ button {
 button div.perso_chat {
     width: 20vw;
     height: 50vh;
-    background-image: url(img/perso_chat_a.png);
+    background-image: url(img/perso_chat_a.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -102,7 +102,7 @@ button div.perso_chat {
 button div.perso_chat_hide {
     width: 20vw;
     height: 50vh;
-    background-image: url(img/perso_chat_b.png);
+    background-image: url(img/perso_chat_b.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -110,6 +110,10 @@ button div.perso_chat_hide {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+button div.perso_chat, button div.perso_chat_hide:active {
+    outline-style: transparent;
 }
 
 /** MESSAGE DIT PAR PERSONNAGE CHAT **/
@@ -245,7 +249,7 @@ section.partie_gauche_cv div ul li a:hover {
 section.partie_gauche_cv div ul li a div.linkedin {
     width: 2.5vw;
     height: 5vh;
-    background-image: url(img/linkedin.png);
+    background-image: url(img/linkedin.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -255,8 +259,7 @@ section.partie_gauche_cv div ul li a div.linkedin {
 section.partie_gauche_cv div ul li a div.git {
     width: 2.5vw;
     height: 5vh;
-    background-image: url(img/github.png);
-    background-color: white;
+    background-image: url(img/github.webp);
     border-radius: 100px;
     background-position: center;
     background-size: contain;
@@ -353,7 +356,7 @@ section.partie_droite_cv div div.deco {
 section.partie_droite_cv div div.deco div.figma {
     width: 3vw;
     height: 3vw;
-    background-image: url(img/figma.png);
+    background-image: url(img/figma.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -363,7 +366,7 @@ section.partie_droite_cv div div.deco div.figma {
 section.partie_droite_cv div div.deco div.html {
     width: 3vw;
     height: 3vw;
-    background-image: url(img/code.png);
+    background-image: url(img/code.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -373,7 +376,7 @@ section.partie_droite_cv div div.deco div.html {
 section.partie_droite_cv div div.deco div.photoshop {
     width: 3vw;
     height: 3vw;
-    background-image: url(img/adobe-photoshop.png);
+    background-image: url(img/adobe-photoshop.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -383,7 +386,7 @@ section.partie_droite_cv div div.deco div.photoshop {
 section.partie_droite_cv div div.deco div.illustrator {
     width: 3vw;
     height: 3vw;
-    background-image: url(img/adobe-illustrator.png);
+    background-image: url(img/adobe-illustrator.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -393,7 +396,7 @@ section.partie_droite_cv div div.deco div.illustrator {
 section.partie_droite_cv div div.deco div.team {
     width: 3vw;
     height: 3vw;
-    background-image: url(img/team-building.png);
+    background-image: url(img/team-building.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -431,7 +434,7 @@ footer a:hover {
 footer div.logo {
     width: 7vw;
     height: 7vh;
-    background-image: url(img/Grand-Logo.png);
+    background-image: url(img/grand-logo.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -728,8 +731,8 @@ footer div.logo:hover {
     section.header h1 {
         position: absolute;
         top: 100px;
-        right: 0px;
-        font-size: 6vw;
+        right: 15px;
+        font-size: 5.5vw;
     }
 
     /** SECTION MOTIF **/
